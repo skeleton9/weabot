@@ -1,0 +1,25 @@
+﻿{
+  "manifest_version": 2,
+
+  "name": "Weabot中国天气预报",
+  "description": "China Weather Report中国天气预报",
+  "version": "0.5",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  
+  "permissions": [
+    "http://61.4.185.48:81/g/",
+	"http://m.weather.com.cn/data/sk/*.html",
+	"http://www.weather.com.cn/data/*.html",
+	"http://www.weather.com.cn/m2/i/*.gif",
+	"http://product.weather.com.cn/alarm/*",
+	"http://toy1.weather.com.cn/search*",
+	"storage",
+	"webRequest",
+	"webRequestBlocking",
+	"notifications"
+  ]
+}

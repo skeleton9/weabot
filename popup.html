@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>RATS</title>
+	<link href="weabot.css" rel="stylesheet" type="text/css">
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+	<script src="jquery-1.9.1.min.js"></script>
+	<script src="popup.js"></script>
+  </head>
+  <body>
+	
+	<div id='header'>
+		<a href='#' id='location-btn'>
+			<img src='icon-location.jpg' style='width:20px;height:20px;vertical-align:middle' />
+		</a>
+		<a href='#' target="_blank" id='city'></a>
+		<div style='float:right'>
+			<input type='text' id='search-input'>
+			<a href='#' id='search-btn'>
+				<img src='icon_search.png' style='position:absolute;top:13px;left:346px;vertical-align:middle;'>
+			</a>
+		</div>
+	</div>
+
+	<div id='container' style='display:none;'>
+		<div id='search-list'>
+		</div>
+		<table style='border-collapse:collapse;margin-bottom:4px;'>
+			<tr>
+				<td id='today' class='today-box' style='width:139px;'>
+				</td>
+				<td id='today-sk' class='today-box' style='width:214px;'>
+					<div style='text-align:center'>天气实况 <span id='sk-time'></span></div>
+					<div id='sk'>
+						<div class="numN">50&nbsp;-<br>25&nbsp;-<br>0&nbsp;-<br>-25&nbsp;-<br>-50&nbsp;-</div>
+						<p id='sk-musk'></p>
+						<div id='temp'></div>
+						<center>相对湿度:<span id='humidity'></span><center>
+					</div>
+					
+					<div id='wind-div'>
+						<div id='wind-speed'>&nbsp;</div>
+						<div id='wind'></div>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div id='alarms'>
+		</div>
+		<div id='details' style='float:left;clear:both;margin-bottom:6px;'>
+		</div>
+	</div>
+  </body>
+</html>
+
